@@ -2,6 +2,8 @@
 # Created by: Matthew Lourenco
 # This is a program that finds the smallest value in an array.
 
+from numpy import random
+
 def find_smallest(array):
     
     smallest_value = array[0]
@@ -11,5 +13,8 @@ def find_smallest(array):
     
     return smallest_value
 
-my_array = [13, 17, 5 , 23, 9]
+my_array = []
+for random_generation in range(0, random.randint(1, 11)):
+    my_array.append(random.randint(1, 26))
+print(my_array)
 print(find_smallest(my_array))
